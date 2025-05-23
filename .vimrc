@@ -40,4 +40,3 @@ hi statusline ctermfg=none ctermbg=none cterm=none
 hi statuslinenc ctermfg=none ctermbg=none cterm=none
 " hi statusline ctermfg=67 ctermbg=white
 " hi statuslinenc ctermfg=67 ctermbg=white
-
