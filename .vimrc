@@ -30,13 +30,11 @@ autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
 " line numbering and removing ~
-hi cursorlinenr cterm=bold
-hi linenr ctermfg=grey
+highlight cursorlinenr cterm=bold
+highlight linenr ctermfg=grey
 set fillchars=eob:\ ,vert:\│
 
 " styling window separators
-hi vertsplit cterm=none
-hi statusline ctermfg=none ctermbg=none cterm=none
-hi statuslinenc ctermfg=none ctermbg=none cterm=none
-" hi statusline ctermfg=67 ctermbg=white
-" hi statuslinenc ctermfg=67 ctermbg=white
+highlight vertsplit cterm=none
+highlight statusline ctermfg=none ctermbg=none cterm=none
+highlight statuslinenc ctermfg=none ctermbg=none cterm=none
