@@ -32,7 +32,7 @@ autocmd WinLeave * setlocal nocursorline
 " line numbering and removing ~
 highlight cursorlinenr cterm=bold
 highlight linenr ctermfg=grey
-set fillchars=eob:\ ,vert:\│
+set fillchars=eob:\ 
 
 " styling window separators
 highlight vertsplit cterm=none
