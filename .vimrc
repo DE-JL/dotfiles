@@ -15,26 +15,26 @@ set undodir=/tmp//
 set visualbell t_vb=
 set noerrorbells
 
-" tabbing and indenting
-set tabstop=4 shiftwidth=4 expandtab smarttab
-set softtabstop=4
+" tabs and indents
+set tabstop=4 softtabstop=4 shiftwidth=4
+set expandtab smarttab
 set autoindent smartindent
 
-" line numbers
-set number relativenumber
-
-" cursorline for current window
-set cursorline
+" line numbering
+set number relativenumber cursorline
 highlight cursorline cterm=none ctermbg=233
+highlight cursorlinenr cterm=bold
+highlight linenr ctermfg=grey
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-" line numbering and removing ~
-highlight cursorlinenr cterm=bold
-highlight linenr ctermfg=grey
+" remove ~
 set fillchars=eob:\ 
 
 " styling window separators
 highlight vertsplit cterm=none
 highlight statusline ctermfg=none ctermbg=none cterm=none
 highlight statuslinenc ctermfg=none ctermbg=none cterm=none
+
+" ctags
+set tags=./tags;
