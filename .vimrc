@@ -2,8 +2,9 @@
 syntax enable
 filetype plugin indent on
 
-" annoying bells
-set noerrorbells novisualbell
+" no error bells
+set noerrorbells
+set visualbell t_vb=
 
 " auto reload on edit
 set autoread
