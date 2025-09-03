@@ -1,43 +1,34 @@
 " formatting
-syntax on
-filetype on
+syntax enable
+filetype plugin indent on
 
-" auto
+" annoying bells
+set noerrorbells novisualbell
+
+" auto reload on edit
 set autoread
-set autochdir
 
 " backup
 set backupdir=/tmp//
 set directory=/tmp//
-set undodir=/tmp//
-
-" annoying bells
-set visualbell t_vb=
-set noerrorbells
 
 " line numbering
 set number relativenumber cursorline
-highlight cursorline cterm=none ctermbg=233
-highlight cursorlinenr cterm=bold
-highlight linenr ctermfg=grey
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
+highlight CursorLine   cterm=none ctermbg=233
+highlight CursorLineNr cterm=bold
+highlight LineNr       ctermfg=grey
 
-" remove ~
+" remove end of buffer ~
 set fillchars=eob:\ 
 
-" statusline
-highlight statusline ctermfg=none ctermbg=none cterm=none
-highlight statuslinenc ctermfg=none ctermbg=none cterm=none
-
 " tabs
+set expandtab 
 set tabstop=4 softtabstop=4 shiftwidth=4
-set expandtab smarttab
 
-" splits
-highlight vertsplit cterm=none
+" statusline and splits
+highlight clear StatusLine
+highlight clear StatusLineNC
+highlight clear VertSplit
 
-" c-style config
-set cindent
-set cinoptions+=(0
+" ctags
 set tags=./tags;
