@@ -15,12 +15,6 @@ set undodir=/tmp//
 set visualbell t_vb=
 set noerrorbells
 
-" tabs and indents
-set tabstop=4 softtabstop=4 shiftwidth=4
-set expandtab smarttab
-set cindent
-set cinoptions+=(0
-
 " line numbering
 set number relativenumber cursorline
 highlight cursorline cterm=none ctermbg=233
@@ -32,10 +26,18 @@ autocmd WinLeave * setlocal nocursorline
 " remove ~
 set fillchars=eob:\ 
 
-" styling window separators
-highlight vertsplit cterm=none
+" statusline
 highlight statusline ctermfg=none ctermbg=none cterm=none
 highlight statuslinenc ctermfg=none ctermbg=none cterm=none
 
-" ctags
+" tabs
+set tabstop=4 softtabstop=4 shiftwidth=4
+set expandtab smarttab
+
+" splits
+highlight vertsplit cterm=none
+
+" c-style config
+set cindent
+set cinoptions+=(0
 set tags=./tags;
