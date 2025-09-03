@@ -18,7 +18,8 @@ set noerrorbells
 " tabs and indents
 set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab smarttab
-set autoindent smartindent
+set cindent
+set cinoptions+=(0
 
 " line numbering
 set number relativenumber cursorline
