@@ -1,4 +1,4 @@
-" syntax and indents
+" syntax and filetype
 syntax enable
 filetype plugin indent on
 
@@ -22,9 +22,11 @@ highlight LineNr       ctermfg=grey
 " remove end of buffer ~
 set fillchars=eob:\ 
 
-" tabs
+" tabs and indents (c-style by default)
 set expandtab 
 set tabstop=4 softtabstop=4 shiftwidth=4
+set cindent
+set cinoptions+=(0
 
 " statusline and splits
 highlight clear StatusLine
