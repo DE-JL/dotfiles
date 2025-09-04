@@ -22,16 +22,20 @@ highlight LineNr       ctermfg=grey
 " remove end of buffer ~
 set fillchars=eob:\ 
 
-" tabs and indents (c-style by default)
-set expandtab 
-set tabstop=4 softtabstop=4 shiftwidth=4
-set cindent
-set cinoptions+=(0
-
 " statusline and splits
 highlight clear StatusLine
 highlight clear StatusLineNC
 highlight clear VertSplit
 
-" ctags
+" tabs
+set expandtab 
+set tabstop=4 softtabstop=4 shiftwidth=4
+
+" c-style indents and ctags
+set cindent
+set cinoptions+=(0
 set tags=./tags;
+
+" search highlighting
+set hlsearch
+set incsearch
