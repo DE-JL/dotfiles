@@ -36,6 +36,6 @@ set cindent
 set cinoptions+=(0
 set tags=./tags;
 
-" search highlighting
-set hlsearch
-set incsearch
+" search
+set ignorecase smartcase
+set hlsearch incsearch
