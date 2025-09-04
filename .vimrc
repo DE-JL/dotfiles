@@ -1,5 +1,4 @@
-" basics
-set nocompatible
+" syntax and indents
 syntax enable
 filetype plugin indent on
 
