@@ -37,5 +37,5 @@ set cinoptions+=(0
 set tags=./tags;
 
 " search
-set ignorecase smartcase
 set hlsearch incsearch
+set ignorecase smartcase
