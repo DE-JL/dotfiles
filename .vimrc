@@ -1,45 +1,51 @@
-" syntax and filetype
+" Syntax and file type
 syntax enable
 filetype plugin indent on
 
-" no error bells
+" No error bells
 set noerrorbells
 set visualbell t_vb=
 
-" auto reload on edit
+" Auto reload on edit
 set autoread
 
-" backup
+" Backup and .swp files
 set backupdir=/tmp//
 set directory=/tmp//
 
-" line numbering
+" Line numbering
 set number relativenumber cursorline
 highlight CursorLine   cterm=none ctermbg=233
 highlight CursorLineNr cterm=bold
 highlight LineNr       ctermfg=grey
 
-" remove end of buffer ~
+" Remove ~ characters at the end of the buffer
 set fillchars=eob:\ 
 
-" statusline and splits
+" Styling status line and splits
 highlight clear StatusLine
 highlight clear StatusLineNC
 highlight clear VertSplit
 
-" tabs
+" Tabs
 set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 
-" c-style indents and ctags
+" C-style indents and Ctags
 set cindent
-set cinoptions+=(0
+set cinoptions=l1,:0,(0
 set tags=./tags;
 
-" search
+" Search
 set hlsearch incsearch
 set ignorecase smartcase
 
-" folding
+" Folding
 set foldmethod=syntax
 set foldlevelstart=99
+
+" Popup menu
+highlight Pmenu      ctermbg=236 ctermfg=252
+highlight PmenuSel   ctermbg=240 ctermfg=15
+highlight PmenuSbar  ctermbg=237
+highlight PmenuThumb ctermbg=239
