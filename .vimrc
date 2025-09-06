@@ -20,7 +20,7 @@ highlight CursorLineNr cterm=bold
 highlight LineNr       ctermfg=grey
 
 " remove end of buffer ~
-set fillchars=eob:\ 
+set fillchars=eob:\
 
 " statusline and splits
 highlight clear StatusLine
@@ -28,7 +28,7 @@ highlight clear StatusLineNC
 highlight clear VertSplit
 
 " tabs
-set expandtab 
+set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 
 " c-style indents and ctags
@@ -40,5 +40,5 @@ set tags=./tags;
 set hlsearch incsearch
 set ignorecase smartcase
 
-" strip trailing whitespace
+" strip trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
