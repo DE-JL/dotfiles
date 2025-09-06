@@ -39,3 +39,6 @@ set tags=./tags;
 " search
 set hlsearch incsearch
 set ignorecase smartcase
+
+" strip trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
