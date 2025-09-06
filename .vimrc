@@ -39,3 +39,7 @@ set tags=./tags;
 " search
 set hlsearch incsearch
 set ignorecase smartcase
+
+"folding
+set foldmethod=syntax
+set foldlevelstart=99
