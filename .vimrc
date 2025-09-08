@@ -33,7 +33,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 
 " C-style indents and Ctags
 set cindent
-set cinoptions=l1,:0,(0
+set cinoptions=g0,h1s,l1s,m1s,:0,(0
 set tags=./tags;
 
 " Search
