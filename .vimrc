@@ -27,7 +27,7 @@ highlight clear StatusLine
 highlight clear StatusLineNC
 highlight clear VertSplit
 
-" Tabs and indentation
+" Tabs
 set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 
