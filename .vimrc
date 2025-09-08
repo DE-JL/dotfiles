@@ -50,6 +50,6 @@ set foldlevelstart=99
 
 " Popup menu
 highlight Pmenu      ctermbg=235 ctermfg=250
-highlight PmenuSel   ctermbg=237 ctermfg=254
-highlight PmenuSbar  ctermbg=239
-highlight PmenuThumb ctermbg=242
+highlight PmenuSel   cterm=bold ctermbg=237 ctermfg=254
+highlight PmenuSbar  ctermbg=236
+highlight PmenuThumb ctermbg=239
