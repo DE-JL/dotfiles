@@ -27,13 +27,17 @@ highlight clear StatusLine
 highlight clear StatusLineNC
 highlight clear VertSplit
 
-" Tabs
+" Tabs and indentation
 set expandtab
 set tabstop=4 softtabstop=4 shiftwidth=4
 
-" C-style indents and Ctags
+" C-style indents
 set cindent
-set cinoptions=g0,h1s,l1s,m1s,:0,(0
+set cinoptions+=g0        " Classes (scope specifiers and functions)
+set cinoptions+=l1,L0,:0  " Switch case labels
+set cinoptions+=(0        " Multiline parentheses indentation
+
+" Ctags
 set tags=./tags;
 
 " Search
