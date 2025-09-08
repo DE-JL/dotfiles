@@ -49,7 +49,7 @@ set foldmethod=syntax
 set foldlevelstart=99
 
 " Popup menu
-highlight Pmenu      ctermbg=236 ctermfg=252
-highlight PmenuSel   ctermbg=240 ctermfg=15
-highlight PmenuSbar  ctermbg=237
-highlight PmenuThumb ctermbg=239
+highlight Pmenu      ctermbg=237 ctermfg=250
+highlight PmenuSel   ctermbg=239 ctermfg=254
+highlight PmenuSbar  ctermbg=236
+highlight PmenuThumb ctermbg=242
