@@ -33,7 +33,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 
 " C-style indents
 set cindent
-set cinoptions+=g0        " Classes (scope specifiers and functions)
+set cinoptions+=N-s,g0    " Namespaces and classes
 set cinoptions+=l1,L0,:0  " Switch case labels
 set cinoptions+=(0,j1     " Multiline parentheses and lambdas
 
