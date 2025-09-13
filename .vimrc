@@ -40,6 +40,7 @@ set cinoptions+=(0,j1     " Multiline parentheses and lambdas
 " Ctags
 set tags=./tags;
 
+
 " Search
 set hlsearch incsearch
 set ignorecase smartcase
@@ -53,3 +54,6 @@ highlight Pmenu      ctermbg=235 ctermfg=250
 highlight PmenuSel   cterm=bold ctermbg=237 ctermfg=254
 highlight PmenuSbar  ctermbg=236
 highlight PmenuThumb ctermbg=239
+
+" Highlighting TODOs
+highlight Todo cterm=bold ctermbg=none ctermfg=yellow
