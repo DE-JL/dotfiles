@@ -40,7 +40,6 @@ set cinoptions+=(0,j1     " Multiline parentheses and lambdas
 " Ctags
 set tags=./tags;
 
-
 " Search
 set hlsearch incsearch
 set ignorecase smartcase
