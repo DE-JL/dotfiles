@@ -29,7 +29,7 @@ highlight clear VertSplit
 
 " Tabs
 set expandtab
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=2 softtabstop=2 shiftwidth=2
 
 " C-style indents
 set cindent
