@@ -22,10 +22,17 @@ highlight LineNr       ctermfg=grey
 " Remove ~ characters at the end of the buffer
 set fillchars=eob:\ 
 
-" Styling status line and splits
-highlight clear StatusLine
-highlight clear StatusLineNC
-highlight clear VertSplit
+" Tab line
+set showtabline=2
+highlight TabLine     cterm=none ctermbg=235 ctermfg=245  " Inactive tabs
+highlight TabLineSel  cterm=bold ctermbg=237 ctermfg=254  " Active tab
+highlight TabLineFill cterm=none ctermbg=233 ctermfg=238  " Filler area
+
+" Status line
+set laststatus=2
+highlight StatusLine   cterm=bold ctermbg=237 ctermfg=254
+highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
+highlight VertSplit    cterm=none ctermbg=233 ctermfg=233
 
 " Tabs
 set expandtab
