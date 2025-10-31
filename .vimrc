@@ -15,24 +15,24 @@ set directory=/tmp//
 
 " Line numbering
 set number relativenumber cursorline
-highlight CursorLine   cterm=none ctermbg=233
+highlight CursorLine cterm=none ctermbg=233
 highlight CursorLineNr cterm=bold
-highlight LineNr       ctermfg=grey
+highlight LineNr ctermfg=grey
 
 " Remove ~ characters at the end of the buffer
-set fillchars=eob:\ 
+set fillchars=eob:\ ,vert:\.
 
 " Tab line
 set showtabline=2
-highlight TabLine     cterm=none ctermbg=235 ctermfg=245  " Inactive tabs
-highlight TabLineSel  cterm=bold ctermbg=237 ctermfg=254  " Active tab
+highlight TabLine cterm=none ctermbg=235 ctermfg=245  " Inactive tabs
+highlight TabLineSel cterm=bold ctermbg=237 ctermfg=254  " Active tab
 highlight TabLineFill cterm=none ctermbg=233 ctermfg=238  " Filler area
 
-" Status line
+" Status line and vsplit
 set laststatus=2
-highlight StatusLine   cterm=bold ctermbg=237 ctermfg=254
+highlight StatusLine cterm=bold ctermbg=237 ctermfg=254
 highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
-highlight VertSplit    cterm=none ctermbg=233 ctermfg=233
+highlight clear VertSplit
 
 " Tabs
 set expandtab
@@ -40,9 +40,9 @@ set tabstop=2 softtabstop=2 shiftwidth=2
 
 " C-style indents
 set cindent
-set cinoptions+=N-s,g0    " Namespaces and classes
+set cinoptions+=N-s,g0  " Namespaces and classes
 set cinoptions+=l1,L0,:0  " Switch case labels
-set cinoptions+=(0,j1     " Multiline parentheses and lambdas
+set cinoptions+=(0,j1  " Multiline parentheses and lambdas
 
 " Ctags
 set tags=./tags;
@@ -56,9 +56,9 @@ set foldmethod=syntax
 set foldlevelstart=99
 
 " Popup menu
-highlight Pmenu      ctermbg=235 ctermfg=250
-highlight PmenuSel   cterm=bold ctermbg=237 ctermfg=254
-highlight PmenuSbar  ctermbg=236
+highlight Pmenu ctermbg=235 ctermfg=250
+highlight PmenuSel cterm=bold ctermbg=237 ctermfg=254
+highlight PmenuSbar ctermbg=236
 highlight PmenuThumb ctermbg=239
 
 " Highlighting TODOs
