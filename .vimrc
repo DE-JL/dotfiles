@@ -19,6 +19,9 @@ highlight CursorLine cterm=none ctermbg=233
 highlight CursorLineNr cterm=bold
 highlight LineNr ctermfg=grey
 
+" Scrolling buffer
+set scrolloff=10
+
 " Remove ~ characters at the end of the buffer
 set fillchars=eob:\ ,vert:\.
 
