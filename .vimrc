@@ -6,9 +6,8 @@ filetype plugin indent on
 set noerrorbells
 set visualbell t_vb=
 
-" Auto reload on edit and auto change directory on open
+" Auto reload on edit
 set autoread
-set autochdir
 
 " Backup and .swp files
 set backupdir=/tmp//
