@@ -13,29 +13,15 @@ set autoread
 set backupdir=/tmp//
 set directory=/tmp//
 
-" Line numbering
-set number relativenumber cursorline
-highlight CursorLine cterm=none ctermbg=233
-highlight CursorLineNr cterm=bold
-highlight LineNr ctermfg=grey
+" Remove ~ characters at the end of the buffer
+set fillchars=eob:\ ,vert:\.
 
 " Scrolling buffer
 set scrolloff=10
 
-" Remove ~ characters at the end of the buffer
-set fillchars=eob:\ ,vert:\.
-
-" Tab line
-set showtabline=2
-highlight TabLine cterm=none ctermbg=235 ctermfg=245  " Inactive tabs
-highlight TabLineSel cterm=bold ctermbg=237 ctermfg=254  " Active tab
-highlight TabLineFill cterm=none ctermbg=233 ctermfg=238  " Filler area
-
-" Status line and vsplit
-set laststatus=2
-highlight StatusLine cterm=bold ctermbg=237 ctermfg=254
-highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
-highlight clear VertSplit
+" Search
+set hlsearch incsearch
+set ignorecase smartcase
 
 " Tabs
 set expandtab
@@ -43,20 +29,49 @@ set tabstop=2 softtabstop=2 shiftwidth=2
 
 " C-style indents
 set cindent
-set cinoptions+=N-s,g0  " Namespaces and classes
+set cinoptions+=N-s,g0    " Namespaces and classes
 set cinoptions+=l1,L0,:0  " Switch case labels
-set cinoptions+=(0,j1  " Multiline parentheses and lambdas
+set cinoptions+=(0,j1     " Multiline parentheses and lambdas
 
 " Ctags
 set tags=./tags;
 
-" Search
-set hlsearch incsearch
-set ignorecase smartcase
-
-" Folding
+" Code folding
 set foldmethod=syntax
 set foldlevelstart=99
+
+" =============================================================================
+" Color Reference (256-color terminal codes)
+" https://www.ditig.com/256-colors-cheat-sheet
+" =============================================================================
+" 233 = very dark grey (near black)
+" 235 = dark grey
+" 236 = dark grey (slightly lighter)
+" 237 = medium dark grey
+" 238 = medium grey
+" 239 = medium grey (slightly lighter)
+" 245 = light grey
+" 250 = lighter grey
+" 254 = very light grey (near white)
+" =============================================================================
+
+" Line numbering
+set number relativenumber cursorline
+highlight CursorLine cterm=none ctermbg=233
+highlight CursorLineNr cterm=bold
+highlight LineNr ctermfg=grey
+
+" Tab line
+set showtabline=2
+highlight TabLine cterm=none ctermbg=235 ctermfg=245
+highlight TabLineSel cterm=bold ctermbg=237 ctermfg=254
+highlight TabLineFill cterm=none ctermbg=233 ctermfg=238
+
+" Status line and vsplit
+set laststatus=2
+highlight StatusLine cterm=bold ctermbg=237 ctermfg=254
+highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
+highlight clear VertSplit
 
 " Popup menu
 highlight Pmenu ctermbg=235 ctermfg=250
