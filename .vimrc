@@ -41,7 +41,7 @@ set foldmethod=syntax
 set foldlevelstart=99
 
 " =============================================================================
-" Color Reference (256-color terminal codes)
+" Color reference (256-color codes)
 " https://www.ditig.com/256-colors-cheat-sheet
 " =============================================================================
 " 233 = very dark grey (near black)
