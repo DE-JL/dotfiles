@@ -14,7 +14,7 @@ set backupdir=/tmp//
 set directory=/tmp//
 
 " Remove ~ characters at the end of the buffer
-set fillchars=eob:\ ,vert:\.
+set fillchars=eob:\ 
 
 " Scrolling buffer
 set scrolloff=10
@@ -71,7 +71,7 @@ highlight TabLineFill cterm=none ctermbg=233 ctermfg=238
 set laststatus=2
 highlight StatusLine cterm=bold ctermbg=237 ctermfg=254
 highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
-highlight clear VertSplit
+highlight VertSplit cterm=none ctermbg=none ctermfg=1
 
 " Popup menu
 highlight Pmenu ctermbg=235 ctermfg=250
