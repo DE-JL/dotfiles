@@ -1,0 +1,33 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 2
+ContinuationIndentWidth: 2
+
+# Braces
+BreakBeforeBraces: Allman
+
+# Spaces
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+SpacesInContainerLiterals: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeAssignmentOperators: true
+
+# Constructor initializer lists
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 2
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+AllowAllConstructorInitializersOnNextLine: false
+
+# Column limit
+ColumnLimit: 120
+
+# Pointer and reference alignment
+PointerAlignment: Left
+
+# Includes
+SortIncludes: true
+IncludeBlocks: Preserve
