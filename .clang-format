@@ -28,6 +28,11 @@ ColumnLimit: 120
 # Pointer and reference alignment
 PointerAlignment: Left
 
+# Field alignment
+AlignConsecutiveDeclarations: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveAssignments: true
+
 # Includes
 SortIncludes: true
 IncludeBlocks: Preserve
