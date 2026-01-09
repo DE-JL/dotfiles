@@ -25,13 +25,12 @@ AllowAllConstructorInitializersOnNextLine: false
 # Column limit
 ColumnLimit: 120
 
-# Pointer and reference alignment
-PointerAlignment: Left
-
-# Field alignment
-AlignConsecutiveDeclarations: true
-AlignConsecutiveBitFields: true
+# Alignment
 AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+AlignOperands: Align
+PointerAlignment: Left
 
 # Includes
 SortIncludes: true
