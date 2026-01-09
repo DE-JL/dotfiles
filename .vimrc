@@ -29,9 +29,9 @@ set tabstop=2 softtabstop=2 shiftwidth=2
 
 " C-style indents
 set cindent
-set cinoptions+=N-s,g0    " Namespaces and classes
-set cinoptions+=l1,L0,:0  " Switch case labels
-set cinoptions+=(0,j1     " Multiline parentheses and lambdas
+set cinoptions+=N-s,g0   " Namespaces and classes
+set cinoptions+=l1,L0,:0 " Switch case labels
+set cinoptions+=(0,j1    " Multiline parentheses and lambdas
 
 " Ctags
 set tags=./tags;
