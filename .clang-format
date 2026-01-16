@@ -13,14 +13,10 @@ BreakBeforeBraces: Allman
 SpacesInParentheses: true
 SpacesInSquareBrackets: true
 SpacesInContainerLiterals: true
-SpaceBeforeParens: ControlStatements
-SpaceBeforeAssignmentOperators: true
 
 # Constructor initializer lists
 BreakConstructorInitializers: BeforeComma
 ConstructorInitializerIndentWidth: 2
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
-AllowAllConstructorInitializersOnNextLine: false
 
 # Column limit
 ColumnLimit: 120
