@@ -40,20 +40,10 @@ set tags=./tags;
 set foldmethod=syntax
 set foldlevelstart=99
 
-" =============================================================================
+" ==============================================================================
 " Color reference (256-color codes)
 " https://www.ditig.com/256-colors-cheat-sheet
-" =============================================================================
-" 233 = very dark grey (near black)
-" 235 = dark grey
-" 236 = dark grey (slightly lighter)
-" 237 = medium dark grey
-" 238 = medium grey
-" 239 = medium grey (slightly lighter)
-" 245 = light grey
-" 250 = lighter grey
-" 254 = very light grey (near white)
-" =============================================================================
+" ==============================================================================
 
 " Line numbering
 set number relativenumber cursorline
@@ -65,13 +55,13 @@ highlight LineNr ctermfg=grey
 set showtabline=2
 highlight TabLine cterm=none ctermbg=235 ctermfg=245
 highlight TabLineSel cterm=bold ctermbg=237 ctermfg=254
-highlight TabLineFill cterm=none ctermbg=233 ctermfg=238
+highlight TabLineFill cterm=none ctermbg=none ctermfg=none
 
 " Status line and vsplit
 set laststatus=2
 highlight StatusLine cterm=bold ctermbg=237 ctermfg=254
 highlight StatusLineNC cterm=none ctermbg=235 ctermfg=245
-highlight VertSplit cterm=none ctermbg=none ctermfg=1
+highlight VertSplit cterm=none ctermbg=none ctermfg=0
 
 " Popup menu
 highlight Pmenu ctermbg=235 ctermfg=250
