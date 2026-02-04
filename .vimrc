@@ -34,7 +34,9 @@ set cinoptions+=l1,L0,:0 " Switch case labels
 set cinoptions+=(0,j1    " Multiline parentheses and lambdas
 
 " Ctags
-set tags=./tags;
+set tags=./tags;,tags
+set tagcase=smart
+set tagrelative
 
 " Code folding
 set foldmethod=syntax
