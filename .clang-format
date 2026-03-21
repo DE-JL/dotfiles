@@ -34,6 +34,7 @@ ColumnLimit: 120
 
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortFunctionsOnASingleLine: Inline
+AllowAllArgumentsOnNextLine: false
 AlignAfterOpenBracket: Align
 BinPackArguments: false
 BinPackParameters: false
