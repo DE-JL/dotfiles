@@ -45,11 +45,14 @@ highlight TabLine cterm=none ctermbg=none
 highlight TabLineSel cterm=bold ctermbg=none
 highlight TabLineFill cterm=none ctermbg=none ctermfg=none
 
-" Status line and vsplit
+" Status line
 set laststatus=2
 highlight StatusLine cterm=bold ctermbg=none
 highlight StatusLineNC cterm=none ctermbg=none
+
+" Vertical splits
 highlight VertSplit cterm=none ctermbg=none ctermfg=0
+set fillchars+=vert:\▏
 
 " Popup menu
 highlight Pmenu ctermbg=235 ctermfg=white
