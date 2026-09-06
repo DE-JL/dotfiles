@@ -24,7 +24,6 @@ vim.opt.undofile = true
 
 -- Plugins
 vim.pack.add({
-    { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
     { src = "https://github.com/nvim-tree/nvim-tree.lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
@@ -32,6 +31,11 @@ vim.pack.add({
 })
 
 -- LSP
+vim.lsp.config("clangd", {
+    cmd = { "clangd" },
+    filetypes = { "c", "cpp" },
+    root_markers = { "compile_commands.json", ".clangd", ".git" },
+})
 vim.lsp.enable("clangd")
 
 -- Treesitter
