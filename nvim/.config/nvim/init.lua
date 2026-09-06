@@ -12,6 +12,7 @@ vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
 
 -- Search
 vim.opt.ignorecase = true
