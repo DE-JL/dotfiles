@@ -35,7 +35,17 @@ vim.lsp.config("clangd", {
     filetypes = { "c", "cpp" },
     root_markers = { "compile_commands.json", ".clangd", ".git" },
 })
-vim.lsp.enable("clangd")
+vim.lsp.config("basedpyright", {
+    cmd = { "basedpyright-langserver", "--stdio" },
+    filetypes = { "python" },
+    root_markers = { "pyproject.toml", "setup.py", "requirements.txt", ".git" },
+})
+vim.lsp.config("ruff", {
+    cmd = { "ruff", "server" },
+    filetypes = { "python" },
+    root_markers = { "pyproject.toml", "ruff.toml", ".git" },
+})
+vim.lsp.enable({ "clangd", "basedpyright", "ruff" })
 
 -- Autocompletion
 vim.opt.completeopt = "menuone,noselect,popup"
@@ -49,7 +59,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Treesitter
-local ts_filetypes = { "c", "cpp", "lua" }
+local ts_filetypes = { "c", "cpp", "lua", "python" }
 require("nvim-treesitter").install(ts_filetypes)
 vim.api.nvim_create_autocmd("FileType", {
     pattern = ts_filetypes,
